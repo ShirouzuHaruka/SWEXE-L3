@@ -1,0 +1,44 @@
+<nav>
+    <ul class="row-sidebar">
+        <%= link_to tweets_path do %> <%= image_tag"logo-black.png", :class=>"img-size"%> <% end %>
+        <li>
+            <%= link_to tweets_path do %>
+                <%= image_tag"home.jpeg"%>
+                <h3>ホーム</h3>
+            <% end %>
+        </li>
+        <li>
+            <%= image_tag"sharp.jpeg"%>
+            <h3>話題を検索</h3>
+        </li>
+        <li>
+            <%= image_tag"bell.jpeg"%>
+            <h3>通知</h3>
+        </li>
+        <li>
+            <%= image_tag"mail.jpeg"%>
+            <h3>メッセージ</h3>
+        </li>
+        <li>
+            <%= image_tag"bookmark.jpeg"%>
+            <h3>ブックマーク</h3>
+        </li>
+        <li>
+            <%= image_tag"list.jpeg"%>
+            <h3>リスト</h3>
+        </li>
+        <li>
+            <%= image_tag"profile.jpeg"%>
+            <h3>プロフィール</h3>
+        </li>
+        <li>
+            <%= image_tag"more.jpeg"%>
+            <h3>もっと見る</h3>
+        </li>
+        <li class="tweet-button">
+            <%= link_to new_tweet_path do %>
+                <h3>ツイートする</h3>
+            <% end %>
+        </li>
+    </ul>
+</nav>

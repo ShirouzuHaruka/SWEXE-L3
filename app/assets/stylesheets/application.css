@@ -13,3 +13,153 @@
  *= require_tree .
  *= require_self
  */
+
+#container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#header {
+    width: 900px;
+    height: 70px;
+    float: right;
+}
+
+#content {
+    width: 900px;
+    float: right;
+}
+
+#sidebar {
+    width: 300px;
+    float: left;
+}
+
+#content > h2 {
+    clear: both;
+}
+
+
+h3 {
+    display: inline-block;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-family: "ＭＳ ゴシック";
+}
+
+h4 {
+    display: inline-block;
+    padding: 3px;
+    margin-left: 5px;
+    font-size: 17px;
+    font-family: "ＭＳ ゴシック";
+}
+
+h5 {
+    display: inline-block;
+    padding: 3px;
+    margin-left: 1px;
+    font-size: 15px;
+    font-family: "ＭＳ ゴシック";
+}
+
+ul {
+    list-style-type: none; /*箇条書きの丸を消す*/
+}
+
+li a {
+    text-decoration: none; /*リンクのアンダーバーをなくす*/
+}
+
+nav li {
+    display: block;
+    width: auto;
+    padding: 10px 0;
+    margin: 10px 0;
+    font-family: "ＭＳ ゴシック";
+    text-align: left;
+}
+
+
+.row-text li {
+    display: inline-block;
+    width: 200px;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-radius: 30px;
+
+    font-family: "ＭＳ ゴシック";
+    text-align:center;
+    vertical-align: middle;/*縦の表示位置を指定*/
+    
+    cursor: pointer;
+}
+
+.row-text li:hover {
+    background-color: #DDDDDD;
+}
+
+
+.row-sidebar {
+    display: inline-block;
+    padding: 5px 5px 5px 70px;
+}
+
+.row-sidebar img {
+    display: inline-block;
+    max-height: 20px;
+    max-width: 20px;
+    vertical-align: middle;
+}
+
+.row-sidebar li {
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 5px 0;
+    margin: 5px 0;
+}
+
+.row-sidebar li:hover {
+    background-color: #DDDDDD;
+}
+
+
+.tweet-button a {
+    position: relative;
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: 30px;
+    background-color: #1DA1F2;
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    font-family: "ＭＳ ゴシック";
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tweet-button a:hover {
+    background-color: #0D83D1 !important;
+}
+
+.row-sidebar .tweet-button:hover {
+    background-color: transparent;
+}
+
+.tweet-button a,.tweet-button a:hover,.tweet-button a:visited {
+    color: white;
+}
+
+
+nav li a:link, nav li a:visited, nav li a:hover, nav li a:active {
+    color: inherit; /* 既存の色を継承する */
+}
+
+.img-size {
+    display: inline-block;
+    max-height: 50px;
+    max-width: 50px;
+    vertical-align: middle;
+}
+

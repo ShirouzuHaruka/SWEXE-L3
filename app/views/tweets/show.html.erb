@@ -1,5 +1,14 @@
-<p>
-<%= @tweet.message %>
-<%= ((Time.current - @tweet.tdate)/60).to_i %>分
-</p>
-<%= link_to '戻る', :back %>
+<ul>
+    <li>
+        <%= image_tag"user_icon.jpeg", :class=>"img-size"%>
+        <h4>ツイ鳥くん</h4>
+        <h5>@twitter_bird</h5>
+    </li>
+    <li style="margin-left: 50px;">
+        <%= @tweet.message %>
+        <%= ((Time.current - @tweet.tdate)/60).to_i %>分
+    </li>
+    <li style="margin-left: 50px;">
+        <%= link_to '戻る', :back %>
+    </li>
+</ul>

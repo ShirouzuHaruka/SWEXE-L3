@@ -1,14 +1,14 @@
-<% if @tweet.errors.present? %>
-    <h3>エラーがあります。</h3>
-    <ul>
-        <% @tweet.errors.full_messages.each do |msg| %>
-            <li><%= msg %></li>
-        <% end %>
+<% content_for :form do %>
+      <ul>
+        <li>
+            <%= image_tag"user_icon.jpeg", :class=>"img-size"%>
+            <h4>ツイ鳥くん</h4>
+            <h5>@twitter_bird</h5>
+        </li>
+        <li style="margin-left: 50px;">
+            <%= render 'form', form_url: { action: :update }, form_submit_label: '更新' %>
+        </li>
     </ul>
 <% end %>
 
-<%= form_for @tweet , url: {action: :update} do |f| %>
-    <%= f.label :message, 'メッセージ' %>
-    <%= f.text_field :message %>
-    <%= f.submit '更新' %>
-<% end %>
+
